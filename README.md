@@ -23,21 +23,21 @@ vrx_ws/
 
 ## ⚙️ 系统要求
 
-- **操作系统**: Ubuntu 22.04 LTS
-- **ROS版本**: ROS 2 Humble
-- **Python**: Python 3.10+
+- **操作系统**: Ubuntu 24.04 LTS
+- **ROS版本**: ROS 2 Jazzy
+- **Python**: Python 3.12+
 - **Gazebo**: Gazebo Harmonic
 
 ## 🚀 快速开始
 
 ### 1. 环境配置
 
-#### 安装ROS 2 Humble（如果还未安装）
+#### 安装ROS 2 Jazzy（如果还未安装）
 ```bash
 curl -sSL https://repo.ros2.org/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://repo.ros2.org/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
 sudo apt update
-sudo apt install -y ros-humble-desktop
+sudo apt install -y ros-jazzy-desktop
 ```
 
 #### 安装Gazebo（推荐 Gazebo Harmonic）
@@ -48,10 +48,10 @@ sudo apt-get install -y gz-harmonic
 #### 安装依赖
 ```bash
 sudo apt install -y \
-  ros-humble-gazebo-msgs \
-  ros-humble-gazebo-plugins \
-  ros-humble-gazebo-ros \
-  ros-humble-ros-gz \
+  ros-jazzy-gazebo-msgs \
+  ros-jazzy-gazebo-plugins \
+  ros-jazzy-gazebo-ros \
+  ros-jazzy-ros-gz \
   python3-colcon-common-extensions
 ```
 
@@ -59,8 +59,8 @@ sudo apt install -y \
 
 ```bash
 # 克隆项目
-git clone https://github.com/Chullll/vrx_ws.git
-cd vrx_ws
+git clone https://github.com/Chullll/VRX_test.git
+cd VRX_test
 
 # 构建项目
 colcon build
@@ -171,9 +171,16 @@ colcon build --symlink-install
    ros2 launch vrx_gz competition.launch.py world:=sydney_regatta
    ```
 
+5. **提交改动到GitHub（可选）**
+   ```bash
+   git add .
+   git commit -m "Your commit message"
+   git push
+   ```
+
 ## 📚 更多资源
 
-- [ROS 2官方文档](https://docs.ros.org/en/humble/)
+- [ROS 2官方文档](https://docs.ros.org/en/jazzy/)
 - [Gazebo官方文档](https://gazebosim.org/)
 - [VRX竞赛官网](https://www.robotx.org/)
 - [WAM-V船舶模型](https://www.wamvx.org/)
