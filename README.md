@@ -170,30 +170,3 @@ colcon build --symlink-install
    ```bash
    ros2 launch vrx_gz competition.launch.py world:=sydney_regatta
    ```
-
-5. **提交改动到GitHub（可选）**
-   ```bash
-   git add .
-   git commit -m "Your commit message"
-   git push
-   ```
-
-## 📚 更多资源
-
-- [ROS 2官方文档](https://docs.ros.org/en/jazzy/)
-- [Gazebo官方文档](https://gazebosim.org/)
-- [VRX竞赛官网](https://www.robotx.org/)
-- [WAM-V船舶模型](https://www.wamvx.org/)
-
-## 👤 作者
-
-- **用户**: Chullll
-- **邮箱**: 905792849@qq.com
-
-## 📄 许可证
-
-[添加你的许可证信息]
-
----
-
-**最后更新**: 2026年6月2日
